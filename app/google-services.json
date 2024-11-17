@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "464369530675",
+    "project_id": "testingapp-1e5df",
+    "storage_bucket": "testingapp-1e5df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464369530675:android:35208a967a933567a8f046",
+        "android_client_info": {
+          "package_name": "com.example.mswipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuv33ZkcpJeWQ3CdHuuqJAWqmQkOFQcYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464369530675:android:81158a7af8f0d1d4a8f046",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuv33ZkcpJeWQ3CdHuuqJAWqmQkOFQcYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464369530675:android:1cc3d228a72daa7fa8f046",
+        "android_client_info": {
+          "package_name": "com.example.testingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuv33ZkcpJeWQ3CdHuuqJAWqmQkOFQcYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scrollbars="vertical"
+    android:weightSum="1">
+
+    <!-- First LineChart for Symptoms Progress -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF" />
+
+    <!-- TextView for Symptoms Chart -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Symptoms Chart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Second LineChart for Running Activity Progress -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/waveChart"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons for user to select last running or all time -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:layout_weight="0">
+
+        <!-- Button for Last Running Activity -->
+        <Button
+            android:id="@+id/lastRunningButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last Running Activity"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Button for All Time -->
+        <Button
+            android:id="@+id/allTimeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last Week"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".AadhaarDetailsActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Aadhaar Card Details"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#37474F"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#BDBDBD"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="John Doe"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/nameLabel"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/aadhaarNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aadhaar Number:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/aadhaarNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="1234 5678 9123"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/aadhaarNumberLabel"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+    <TextView
+        android:id="@+id/dobLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Date of Birth:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/aadhaarNumberTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="01/01/1980"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/dobLabel"
+        app:layout_constraintTop_toBottomOf="@id/aadhaarNumberTextView" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gender:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/dobTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Male"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/genderLabel"
+        app:layout_constraintTop_toBottomOf="@id/dobTextView" />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/genderTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="1234 Main St, City, State, Country"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/addressLabel"
+        app:layout_constraintTop_toBottomOf="@id/genderTextView" />
+
+    <TextView
+        android:id="@+id/diseaseSectionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Disease Information"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#37474F"
+        app:layout_constraintTop_toBottomOf="@id/addressTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Patient State -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        app:layout_constraintBottom_toTopOf="@+id/patientStateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseSectionHeader"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <TextView
+        android:id="@+id/patientStateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Patient State:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/diseaseSectionHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Diagnosis Code -->
+
+    <TextView
+        android:id="@+id/patientStateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Example State"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/patientStateLabel"
+        app:layout_constraintTop_toBottomOf="@id/diseaseSectionHeader" />
+
+    <TextView
+        android:id="@+id/diagnosisCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Diagnosis Code:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/patientStateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Diagnosis Date -->
+    <TextView
+        android:id="@+id/diagnosisCodeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="DX12345"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/diagnosisCodeLabel"
+        app:layout_constraintTop_toBottomOf="@id/patientStateTextView" />
+
+    <TextView
+        android:id="@+id/diagnosisDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Diagnosis Date:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/diagnosisCodeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Type of Disease -->
+
+    <TextView
+        android:id="@+id/diagnosisDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="01/01/2023"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/diagnosisDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/diagnosisCodeTextView" />
+
+    <TextView
+        android:id="@+id/typeOfDiseaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type of Disease:"
+        android:textSize="18sp"
+        android:textColor="#455A64"
+        app:layout_constraintTop_toBottomOf="@id/diagnosisDateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/typeOfDiseaseTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Multiple Sclerosis"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/typeOfDiseaseLabel"
+        app:layout_constraintTop_toBottomOf="@id/diagnosisDateTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
