@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+    id("kotlin-kapt")
 }
 
 android {
@@ -40,6 +41,9 @@ android {
 }
 
 dependencies {
+    implementation("androidx.room:room-runtime:2.5.2")
+    kapt("androidx.room:room-compiler:2.5.2")
+
     implementation (libs.mpandroidchart)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
